@@ -1,0 +1,432 @@
+/* contactez nous */
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #103c27;
+  }
+  /* ecriture du nom email et message et couleur */
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #294d3c;
+  }
+
+  /* la forme mdewra des espace decriture */
+  .contact-form input, 
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1.5px solid #a67c52;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #4a3c31;
+    resize: vertical;
+  }
+  
+  /* couleur du bouton envoyer */
+  .contact-form button {
+    width: 100%;
+    background-color: #1a1818;
+    color: rgb(236, 234, 234);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  /* change de couleur du bouton envoyer */
+  .contact-form button:hover {
+    background-color: #467061;
+  }
+
+/* donne la forme petite carre mdwra */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  /* box article parameters  */
+  .product-card button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  /*  quand j appuie sur les articles */
+  .product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+ /* forme de la photo bech maykonch twil */
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  } 
+  /* le titre des article */
+  .product-details {
+    padding: 15px 20px;
+    color: #1a4f3b;
+  }
+  /* la couleure et taille de l ecriture sur les bouquets */
+  .product-details p {
+    margin: 0 0 15px;
+    color: #384342;
+    min-height: 40px;
+  }
+  /* prix colur*/
+  .product-price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  /* bouton pour add */
+  .btn-add {
+    background-color: #86cdb1;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  /* quand je clique dessus il change de couleurs */
+  .btn-add:hover {
+    background-color: #62977a;
+  }
+
+  /* Panier */
+  .cart {
+    background-color: #86cdb1;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+    max-width: 400px;
+    margin: 0 auto 60px;
+  }
+  .cart h2 {
+    color: #eaf3ef;
+    margin-bottom: 20px;
+  }
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #d9cbbd;
+    padding-bottom: 8px;
+  }
+  .cart-item-name {
+    flex: 1;
+    color: #0b251a;
+  }
+  .cart-item-qty {
+    margin: 0 15px;
+    font-weight: 600;
+    color: #0b251a;
+  }
+  .cart-item-price {
+    color: #0b251a;
+    font-weight: 700;
+  }
+  .cart-item-remove {
+    background: transparent;
+    border: none;
+    color: #236046;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .cart-total {
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #0d1814;
+    text-align: right;
+  }
+  .empty-cart {
+    text-align: center;
+    color: #f3f5f4 ;
+    font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*bande du haut */
+:root {
+  --blanc-casse: #ededd449;
+  --beige: #f4f9f8;
+  --vert-pale: #e3e9df;
+  --vert-fonce: #1c998b;
+  --texte: #333;
+  --accent: #15796f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* le fond */
+
+body {
+  background-color: var(--beige);
+  
+}
+/* le carre titre la ou il ya elegance florale */
+header {
+  background-color: var(--blanc-casse);
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
+}
+ /*tittre du debut   */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8em;
+  color: var(--noir);
+}
+/* pour l ecriture quil ya en dessous 1945 */
+header p {
+  font-size: 1.1em;
+  color: #666;
+}
+/* pour la barre de navigation en haut */
+nav {
+  background-color: var(--vert-pale);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+/* pour nsetef la barre de haut horizantalemet */
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+}
+/* mettre des espaces dans la barre de haut */
+nav li {
+  margin: 0 20px;
+}
+/* ils etait sous forme de lien je les ai rendu en ecriture */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--texte);
+  transition: color 0.3s ease;
+}
+/* pour changer de couleur des quon appuit */
+nav a:hover {
+  color: var(--vert-fonce);
+}
+/* pour creer des espaces prpres kholassa */
+main {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeIn 1s ease;
+}
+
+
+/* pour le titre de nos bouquets */
+section h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2em;
+  color: var(--vert-fonce);
+  margin-bottom: 10px;
+}
+/* la aprtie de lexplication de chaque bouquet */
+section p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: var(--vert-fonce);
+  border: none;
+  color: white;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+
+button:hover {
+  background-color: var(--accent);
+}
+
+footer {
+  background-color: var(--blanc-casse);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  color: #777;
+}
+
+.message-hidden {
+  display: none;
+  margin-top: 10px;
+  color: var(--vert-fonce);
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+
+.hero {
+  background-image: url('images/lilia.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.menu {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #15796f;
+}
+
+.menu-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prix {
+    font-weight: bold;
+    color: #15796f;
+}
+/*malakk */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.service-box {
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff4a;
+    border-radius: 10px;
+    
+}
+.service-box img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.service-box h1 {
+    color: #1c998b;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-box p {
+  text-align: center;
+    font-size: 15px;
+    color: #1d1d1d;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
